@@ -1,0 +1,177 @@
+{% extends 'web/partials/base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- breadcrumb area -->
+    <div class="breadcrumb-area breadcrumb-padding bg-img" style="background-image:url({% static 'web/images/bg/bg-2.jpg' %})">
+        <div class="container">
+            <div class="breadcrumb-content text-center">
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><i class="fa fa-angle-right"></i></li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- About area -->
+    <div class="section section-padding">
+        <div class="container">
+            <div class="row row-cols-lg-2 row-cols-1 mb-n6">
+                <div class="col align-self-center mb-6">
+                    <div class="about-content">
+                        <h2 class="title">Welcome to <span>Wartood</span></h2>
+                        <p>We are passionate, knowing that people live, work, play and inhabit the spaces and places we imagine and envision for our clients. To those wanting to make an impact with interior design.</p>
+                    </div>
+                    <div class="working-away-wrap">
+                        <div class="working-away">
+                            <div class="working-away-icon">
+                                <i class="dlicon ui-1_home-51"></i>
+                            </div>
+                            <div class="working-content">
+                                <h3 class="title">Qualified Planning</h3>
+                                <p>Experience the art of qualified planning as we meticulously shape spaces to fulfill their true potential.</p>
+                            </div>
+                        </div>
+                        <div class="working-away">
+                            <div class="working-away-icon">
+                                <i class="dlicon design_measure-big"></i>
+                            </div>
+                            <div class="working-content">
+                                <h3 class="title">Professional Design</h3>
+                                <p>Unlock the potential of your space with our professional design services that blend innovation and elegance seamlessly.</p>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="col mb-6">
+                    <div class="about-banner">
+                        <img src="{% static 'web/images/banner/banner-2.png' %}" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Funfact area -->
+    <div class="section section-padding bg-img overly-style-1 opacity-point-7" style="background-image:url({% static 'web/images/bg/bg-1.jpg' %})">
+        <div class="container">
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-2 row-cols-1 mb-n6">
+                <div class="col mb-8">
+                    <div class="funfact-2 text-center">
+                        <i class="dlicon travel_bag"></i>
+                        <span class="odometer count-style-2" data-count-to="594"></span>
+                        <h4 class="title">Projects Worked</h4>
+                    </div>
+                </div>
+                <div class="col mb-8">
+                    <div class="funfact-2 text-center">
+                        <i class="dlicon users_man-23"></i>
+                        <span class="odometer count-style-2" data-count-to="100"></span>
+                        <h4 class="title">Expert Workers</h4>
+                    </div>
+                </div>
+                <div class="col mb-8">
+                    <div class="funfact-2 text-center">
+                        <i class="dlicon emoticons_smile"></i>
+                        <span class="odometer count-style-2" data-count-to="785"></span>
+                        <h4 class="title">Happy Clients</h4>
+                    </div>
+                </div>
+                <div class="col mb-8">
+                    <div class="funfact-2 text-center">
+                        <i class="dlicon tech-2_firewall"></i>
+                        <span class="odometer count-style-2" data-count-to="542"></span>
+                        <h4 class="title">Upcomming Project</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team  area -->
+ 
+    <!-- Testimonial area -->
+    <div class="section section-padding bg-img over-style-2 opacity-point-7">
+        <div class="container">
+            <div class="section-title-2 text-center mb-lg-9 mb-md-7 mb-5">
+                <h2 class="here white">WHAT <span> CLIENTS</span> SAY?</h2>
+                <p class="add">Wartood's team balanced style and functionality perfectly in our home redesign. They're the go-to for anyone who wants a stunning yet practical living space.</p>
+            </div>
+            
+            <div class="testimonial-active swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="single-testimonial-wrapper">
+                            <div class="testimonial-img-title">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'web/images/testimonial/client-1.png' %}" alt="">
+                                </div>
+                                <div class="testimonial-title">
+                                    <h4>Daniel</h4>
+                                    <span>Ui/UX Designer</span>
+                                </div>
+                            </div>
+                            <p>"Wartood Interior Design nailed it! Our space is now a perfect blend of comfort and style. Highly recommended!"</p>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-testimonial-wrapper">
+                            <div class="testimonial-img-title">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'web/images/testimonial/client-2.png' %}" alt="">
+                                </div>
+                                <div class="testimonial-title">
+                                    <h4>Deborah Berry</h4>
+                                    <span>Web Developer</span>
+                                </div>
+                            </div>
+                            <p>"Artistry meets functionality - Wartood's design transformed our house into a masterpiece. Love it!"</p>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-testimonial-wrapper">
+                            <div class="testimonial-img-title">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'web/images/testimonial/client-3.png' %}" alt="">
+                                </div>
+                                <div class="testimonial-title">
+                                    <h4>Emma Hayes</h4>
+                                    <span>CEO & Founder </span>
+                                </div>
+                            </div>
+                            <p>"Personalized perfection! Wartood Interior Design captured our essence in every detail. 5 stars!"</p>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="single-testimonial-wrapper">
+                            <div class="testimonial-img-title">
+                                <div class="testimonial-img">
+                                    <img src="{% static 'web/images/testimonial/client-4.png' %}" alt="">
+                                </div>
+                                <div class="testimonial-title">
+                                    <h4>Arnaud</h4>
+                                    <span>Graphics Designer</span>
+                                </div>
+                            </div>
+                            <p>"From vision to reality - Wartood's team exceeded expectations. Our space has a new heartbeat."</p>
+                            <div class="quote">
+                                <i class="fa fa-quote-left"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   {% endblock %}
