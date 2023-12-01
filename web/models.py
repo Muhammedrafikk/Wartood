@@ -9,6 +9,9 @@ class Email(models.Model):
 
     def __str__(self):
         return self.email
+    class Meta:
+        verbose_name = ("Email")
+        verbose_name_plural = ("Email")
         
 class Contact(models.Model):
     name = models.CharField(max_length=100)
@@ -18,6 +21,10 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+    
+    class Meta:
+        verbose_name = ("Contact")
+        verbose_name_plural = ("Contact")
 
 class Enquiry(models.Model):
     image = models.ImageField(upload_to='photos')
@@ -43,6 +50,10 @@ class Enquiry(models.Model):
     
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name = ("Enquiry")
+        verbose_name_plural = ("Enquiry") 
       
 class EnquiryForm(models.Model):
     Product = models.CharField(max_length=100)
@@ -52,3 +63,7 @@ class EnquiryForm(models.Model):
 
     def __str__(self):
         return self.Product
+
+    class Meta:
+        verbose_name = ("EnquiryForm")
+        verbose_name_plural = ("EnquiryForm") 

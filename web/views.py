@@ -60,13 +60,6 @@ def contact(request):
     return render(request,'web/contact.html')
 
 def project(request):
-    #email
-    # datatuple = (
-    #     ("hello", "how are you.", "from@example.com", ["@gmail.com"]),
-    #     ("use", "haiii.", "from@example.com", ["@gmail.com"]),
-    # )
-    # send_mass_mail(datatuple)
-    
     if request.method == 'POST':
         email = request.POST.get('start_email') 
         order_6=Email(
